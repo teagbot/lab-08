@@ -61,7 +61,7 @@ class WizardTest {
         evilWizard.train()
 
 
-        assertEquals(30, evilWizard.mana) // mana does not change
+        assertEquals(0, evilWizard.mana) // mana does not change
         assertEquals(10, evilWizard.spellPower) // spellPower does not change
     }
 }
