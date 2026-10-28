@@ -57,7 +57,9 @@ class WizardTest {
 
     @Test
     fun train_notEnoughMana_manaDoesNotChange_spellPowerDoesNotChange() {
+        evilWizard.mana = 0 // not enough mana to train
         evilWizard.train()
+
 
         assertEquals(30, evilWizard.mana) // mana does not change
         assertEquals(10, evilWizard.spellPower) // spellPower does not change
